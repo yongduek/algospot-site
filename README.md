@@ -44,6 +44,10 @@
 1. virtualenv 내에서 까는 모든 패키지는 `~/.virtualenvs/algospot-django` 디렉토리 내에 깔리게 되며, sudo 권한 없이도 깔 수 있다. algospot 사이트에 필요한 각종 파이썬 패키지는 requirements.txt 에 들어있다. pip 을 이용해 requirements 에 들어 있는 패키지들을 깐다. 이렇게 하면 django 랑 기타 장고 앱들을 다 깔아 준다.
 
 	$ pip install -r requirements.txt
+	
+오래된 패키지가 몇개 있어서 아예 다운이 되지 않는다.
+PIL: Pillow >= 0.1.0
+pygooglechart 0.3.0 -> 0.4.0
 
 1. 단, 마크업을 위해 사용하는 misaka 패키지는 커스터마이징한 것을 사용하고 있으므로 따로 설치해 주어야 한다.
 
